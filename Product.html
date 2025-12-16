@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="./Products.css">
+
+  <!--* fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+  <!--# Cart_Container -->
+  <aside id="side_bar_container">
+        <div id="sidebar1">
+          <h1>Your Cart</h1>
+          <p><i class="fa-solid fa-xmark"></i></p>
+        </div>
+        <div id="sidebar2">
+          Your cart is empty
+        </div>
+        <div id="sidebar3">
+          <h2>Total:₹<span>0.00</span></h2>
+          <button id="checkout_btn">Check out</button>
+        </div>
+  </aside>
+
+  <!--# Navigation Bar -->
+    <nav>
+      <aside id="nav_one">
+        <h1 id="logo">ClothArc</h1>
+      </aside>
+      <aside id="nav_two">
+        <a href="./index.html">Home</a>
+        <a href="Product.html">Shop</a>
+        <a href="#fourth_page">Contact</a>
+      </aside>
+      <aside id="nav_three">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p id="cart_quantity">0</p>
+        <p id="cart_price">₹0.00</p>
+      </aside>
+    </nav>
+    <!--! Products Page -->
+    <section id="products_first_page">
+      <h1>Our Collections</h1>
+      <p>Find the perfect pieces that defines your style 🔥</p>
+    </section>
+    <section id="products_second_page">
+      <h1>Explore Products</h1>
+      <input type="text" id="searchInput" placeholder="search Products...">
+    </section>
+    <!--* Sunglassses -->
+    <section id="sunglasses_container" class="products">
+      <h1>Sunglasses</h1>
+      <article class="product_container">
+        <!--! 1 -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses1.png" alt="">
+
+          <h1>Classic Aviator</h1>
+          <p>₹1000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 2 -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses2.png" alt="">
+
+          <h1>Modern Geometric</h1>
+          <p>₹1100.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 3 -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses3.png" alt="">
+
+          <h1>Sporty WrapAround</h1>
+          <p>₹800.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 4  -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses4.png" alt="">
+
+          <h1>Retro Cat-Eye</h1>
+          <p>₹1000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 5 -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses5.png" alt="">
+
+          <h1>Minimalist Round</h1>
+          <p>₹1100.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 6 -->
+        <div class="product_card">
+
+          <img src="./assests/sunglasses6.png" alt="">
+
+          <h1>Bold OverSized</h1>
+          <p>₹1050.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    <!--* Watches -->
+    <section id="watch_container" class="products">
+      <h1>Watch</h1>
+      <article class="product_container">
+        <!--! 1 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Timeless Titan</h1>
+          <p>₹5000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 2 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Modern FastTrack</h1>
+          <p>₹1100.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 3 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Digital Casio</h1>
+          <p>₹3000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 4  -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Smart Watch Bolt</h1>
+          <p>₹1200.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 5 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Smart Watch Boat</h1>
+          <p>₹1100.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 6 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Rolex</h1>
+          <p>₹15000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    <!--* Jackets -->
+    <section id="Jacket_container" class="products">
+      <h1>Jackets</h1>
+      <article class="product_container">
+        <!--! 1 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Padded Red Jacket</h1>
+          <p>₹4000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 2 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Riding Jacket</h1>
+          <p>₹2500.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 3 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Leather Jacket</h1>
+          <p>₹5500.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 4  -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Pure Black Classic Jacket</h1>
+          <p>₹1800.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 5 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Winter Jacket</h1>
+          <p>₹2200.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 6 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Hoodie Jacket</h1>
+          <p>₹1050.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    <!--* Clothes -->
+    <section id="clothes_container" class="products">
+      <h1>Clothes</h1>
+      <article class="product_container">
+        <!--! 1 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Baggy Jean Blue</h1>
+          <p>₹800.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 2 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Checked Shirt</h1>
+          <p>₹600.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 3 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Formal BlackTrouser</h1>
+          <p>₹800.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 4  -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Premium Black Suit</h1>
+          <p>₹4000.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 5 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Black Jeans</h1>
+          <p>₹1100.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+        <!--! 6 -->
+        <div class="product_card">
+
+          <img src="" alt="">
+
+          <h1>Oversized Tee</h1>
+          <p>₹550.00</p>
+          <div class="card_details">
+            <aside class="card_details1">
+              <p class="minus_btn">-</p>
+              <p class="card_quantity">0</p>
+              <p class="plus_btn">+</p>
+            </aside>
+            <aside class="card_details2">
+              <p><i class="fa-solid fa-cart-shopping"></i></p>
+            </aside>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+        <!--! About Contact Page -->
+    <section id="fourth_page">
+    <article id="info_container">
+
+      <aside id="info1">
+        <h1>ClothArc</h1>
+        <h3>Timeless style engineered for everyday confidence</h3>
+        <p>ClothArc blends classic craftsmanship with modern design, delivering apparel that feels as good as it looks. Built for people who value quality, confidence and everyday style</p>
+      </aside>
+
+      <aside id="info2">
+        <h1>Quick Links</h1>
+        <ul>
+          <li>About Us</li>
+          <li>Shipping</li>
+          <li>Returns</li>
+          <li>Size Guides</li>
+        </ul>
+      </aside>
+
+      <aside id="info3">
+        <h1>Customer Service</h1>
+        <ul>
+          <li>Contact</li>
+          <li>FAQ</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </aside>
+
+      <aside id="info4">
+        <h1>Contact</h1>
+        <div id="info4_1">
+          <p>📩 clotharc@gmail.com</p>
+          <div id="icon_container">
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+          <div id="info4_subscribe">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="enter your email here">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </aside>
+
+    </article>
+
+    <footer>
+      &copy; 2025 ClothArc | All Rights Reserved
+    </footer>
+    </section>
+
+    <script src="./Product.js"></script>
+</body>
+</html>

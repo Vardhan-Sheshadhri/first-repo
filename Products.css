@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+#logo,h1,h2 {
+  font-family: "Cormorant Garamond", serif;
+} 
+nav{
+  height: 100px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: #fff;
+}
+#nav_one{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav_two{
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 50px;
+}
+#nav_three{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+#nav_one>#logo{
+    font-size: 40px;
+    color: rgb(223, 4, 4);
+}
+#nav_two>a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  position: relative;
+}
+#nav_two>a::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0%;
+  border-bottom: 2px solid red;
+  transition: width 0.3s 0s linear;
+}
+#nav_two>a:hover::after{
+  width: 100%;
+}
+#nav_three>i{
+  font-size: 25px;
+}
+#cart_quantity{
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+#cart_price{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#products_first_page{
+  height: 50vh;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#products_first_page > h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px 5px black;
+}
+#products_first_page > p {
+  font-size: 20px;
+}
+#products_second_page{
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#products_second_page > input {
+  height: 40px;
+  width: 300px;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.368);
+}
+#sunglasses_container,#watch_container,#Jacket_container,#clothes_container{
+  margin-top: 50px;
+}
+#sunglasses_container > h1,#watch_container > h1,#Jacket_container > h1,#clothes_container > h1 {
+  padding: 20px 20px;
+  margin: 20px 40px;
+  font-size: 50px;
+  border-left: 10px solid rgb(255, 0, 136);
+}
+.product_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product_card{
+  border-radius: 10px;
+  flex-basis: 30%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product_card > img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.card_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+.card_details1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.minus_btn,.plus_btn{
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  border-radius: 50%;
+}
+.card_details2 > p {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  border-radius: 50%;
+}
+
+/*@ Cart Container Slide Bar */
+#side_bar_container
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 100vh;
+  width: 320px;
+  position: fixed;
+  z-index:101;
+  background-color: #fff;
+  right: -320px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s 0s linear;
+}
+#sidebar1
+{
+  flex-basis: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+}
+#sidebar2{
+  flex-basis:70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+#sidebar3{
+  flex-basis: 15%;
+}
+#sidebar3>h2{
+  font-size: 30px;
+  text-align: center;
+}
+#sidebar3>button{
+  width: 100%;
+  height: 40px;
+  background-color: royalblue;
+  color: white;
+  font-size: 20px;
+  border:  none;
+  border-radius: 10px;
+}
+.cart_item{
+  margin: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 5px;
+}
+.cart_item1>img{
+  border: 1px solid rgba(0, 0, 0, 0.203);
+  height: 100px;
+  width: 150px;
+}
+.cart_item2{
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart_item2>.cart_item2_details{
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+}
+
+/*! AboutContact Page */
+#fourth_page{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background-color: #efefef;
+}
+#info_container{
+  height: 90%;
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 0px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+}
+#info1,#info2,#info3,#info4{
+  height: 100%;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.365);
+}
+#info4{
+  border-right: none;
+}
+#info1>h1,#info2>h1,#info3>h1,#info4>h1{
+  font-size: 40px;
+  text-align: center;
+}
+#info1>h3{
+  text-align: center;
+}
+#info1>p{
+  font-size: 16px;
+  text-align: center;
+}
+#info2>ul,#info3>ul{
+  font-size: 20px;
+}
+#info2>ul>li,#info3>ul>li{
+  padding: 10px 0px;
+}
+#info4{
+  gap: 14px 0px;
+}
+#info4_1>p{
+  font-size: 20px;
+}
+#icon_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  gap: 0px 15px;
+}
+.icon{
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+#info4_subscribe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#info4_subscribe>h3{
+  font-size: 25px;
+  margin-top: 15px;
+}
+#info4_subscribe>input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: red;
+  border: 1px solid grey;
+}
+#info4_subscribe>button{
+  height: 40px;
+  width: 50%;
+  margin-top: -10px;
+  background-color: whitesmoke;
+  color: red;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#info4_subscribe>button:hover{
+  scale: 1.1;
+}
+footer{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

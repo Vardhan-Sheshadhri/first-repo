@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+#logo,h1,h2 {
+  font-family: "Cormorant Garamond", serif;
+} 
+
+nav{
+  height: 100px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: #fff;
+}
+#nav_one{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav_two{
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 50px;
+}
+#nav_three{
+  flex-basis: 20%;
+  display: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  gap: 10px;
+  position: relative;
+}
+#nav_one>#logo{
+    font-size: 40px;
+    color: rgb(223, 4, 4);
+}
+#nav_two>a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  position: relative;
+}
+#nav_two>a::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0%;
+  border-bottom: 2px solid red;
+  transition: width 0.3s 0s linear;
+}
+#nav_two>a:hover::after{
+  width: 100%;
+}
+#nav_three>i{
+  font-size: 25px;
+}
+#cart_quantity{
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+#cart_price{
+  font-size: 20px;
+  font-weight: 600;
+}
+#slider_container{
+  height: calc(100vh - 100px);
+  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#slider_container>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.non-active{
+  display: none;
+}
+#leftarrow,
+#rightarrow{
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+  border: none;
+  position: absolute;
+}
+#leftarrow{
+  left: 150px;
+}
+#rightarrow{
+  right: 150px;
+}
+
+/*! Second Page */
+#second_page{
+  height: 80vh;
+  margin-top: 100px;
+  display:flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+.card{
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card>img{
+  height: 400px;
+  width: 300px;
+}
+.layer{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 170px;
+  position: absolute;
+  bottom: -400px;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.212); */
+  transition: all 0.5s 0s linear;
+}
+.card:hover>.layer{
+  bottom: 0px;
+}
+.layer>a>button{
+  background-color: whitesmoke;
+  color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: relative;
+}
+.layer>a>button:hover{
+  content: "";
+}
+.layer>a>button::after{
+  content: "";
+  background-color: rgba(128, 0, 128, 0.107);
+  color: white;
+  height: 100%;
+  width: 0%;
+  font-size: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 0.5s 0s linear;
+  opacity: 0;
+}
+.layer>a>button:hover::after{
+  width: 100%;
+  font-size: 20px;
+  opacity: 1;
+}
+.layer>p{
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 10px 0px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/*! Third Page */
+#third_page{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#third_page>img{
+  height: 100%;
+  width: 72%;
+  object-fit: cover;
+}
+#third_page_layer{
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  transition: all 0.7s 0s ease;
+}
+#third_page_layer>h1{
+  font-size: 0px;
+  text-shadow: 2px 2px 5px black;
+  transition: all 0.7s 0s ease;
+}
+#third_page_layer>p{
+  font-size: 0px;
+  transition: all 0.7s 0s ease  ;
+}
+
+#third_page > img:hover + #third_page_layer,#third_page_layer:hover{
+  height: 100%;
+  width: 72%;
+  opacity: 1;
+}
+
+#third_page_layer:hover>h1{
+  font-size: 100px;
+}
+#third_page_layer:hover>p{
+  font-size: 20px;
+}
+
+/*! Fourth Page */
+#fourth_page{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background-color: #efefef;
+}
+#info_container{
+  height: 90%;
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 0px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.468);
+}
+#info1,#info2,#info3,#info4{
+  height: 100%;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.365);
+}
+#info4{
+  border-right: none;
+}
+#info1>h1,#info2>h1,#info3>h1,#info4>h1{
+  font-size: 40px;
+  text-align: center;
+}
+#info1>h3{
+  text-align: center;
+}
+#info1>p{
+  font-size: 16px;
+  text-align: center;
+}
+#info2>ul,#info3>ul{
+  font-size: 20px;
+}
+#info2>ul>li,#info3>ul>li{
+  padding: 10px 0px;
+}
+#info4{
+  gap: 14px 0px;
+}
+#info4_1>p{
+  font-size: 20px;
+}
+#icon_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  gap: 0px 15px;
+}
+.icon{
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+#info4_subscribe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#info4_subscribe>h3{
+  font-size: 25px;
+  margin-top: 15px;
+}
+#info4_subscribe>input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: red;
+  border: 1px solid grey;
+}
+#info4_subscribe>button{
+  height: 40px;
+  width: 50%;
+  margin-top: -10px;
+  background-color: whitesmoke;
+  color: red;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#info4_subscribe>button:hover{
+  scale: 1.1;
+}
+footer{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

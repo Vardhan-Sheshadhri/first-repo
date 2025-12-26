@@ -363,3 +363,167 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
+/*! RESPONSIVE DESIGN */
+/* =====================================================
+   RESPONSIVE LAYER (PRODUCT PAGE)
+   APPEND ONLY — EXISTING CODE UNTOUCHED
+===================================================== */
+
+/* ---------- MOBILE (up to 480px) ---------- */
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #nav_two {
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  #nav_two > a {
+    font-size: 16px;
+  }
+
+  /* HERO SECTION */
+  #products_first_page {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #products_first_page > h1 {
+    font-size: 36px;
+  }
+
+  #products_first_page > p {
+    font-size: 16px;
+  }
+
+  /* SEARCH BAR */
+  #products_second_page {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #products_second_page > input {
+    width: 100%;
+  }
+
+  /* PRODUCT HEADINGS */
+  #sunglasses_container > h1,
+  #watch_container > h1,
+  #Jacket_container > h1,
+  #clothes_container > h1 {
+    font-size: 28px;
+    margin: 20px;
+  }
+
+  /* PRODUCT CARDS */
+  .product_card {
+    flex-basis: 100%;
+    margin: 15px 0;
+  }
+
+  .product_card > img {
+    height: auto;
+  }
+
+  .card_details {
+    padding: 0 10px;
+  }
+
+  /* CART SIDEBAR */
+  #side_bar_container {
+    width: 100%;
+    right: -100%;
+    border-radius: 0;
+  }
+
+  /* FOOTER */
+  #fourth_page {
+    height: auto;
+  }
+
+  #info_container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  #info1, #info2, #info3, #info4 {
+    flex-basis: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+  }
+
+  #info4_subscribe > input,
+  #info4_subscribe > button {
+    width: 100%;
+  }
+}
+
+
+/* ---------- TABLET (481px to 768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  /* HERO */
+  #products_first_page > h1 {
+    font-size: 45px;
+  }
+
+  /* SEARCH */
+  #products_second_page {
+    padding: 30px;
+  }
+
+  /* PRODUCT HEADINGS */
+  #sunglasses_container > h1,
+  #watch_container > h1,
+  #Jacket_container > h1,
+  #clothes_container > h1 {
+    font-size: 38px;
+  }
+
+  /* PRODUCT GRID */
+  .product_card {
+    flex-basis: 45%;
+  }
+
+  /* CART SIDEBAR */
+  #side_bar_container {
+    width: 380px;
+    right: -380px;
+  }
+
+  /* FOOTER */
+  #info_container {
+    flex-wrap: wrap;
+  }
+
+  #info1, #info2, #info3, #info4 {
+    flex-basis: 45%;
+    border-right: none;
+  }
+}
+
+
+/* ---------- LAPTOP & DESKTOP (769px and above) ---------- */
+@media (min-width: 769px) {
+
+  /* Preserve original desktop behavior */
+  .product_card {
+    flex-basis: 30%;
+  }
+
+  #info_container {
+    flex-wrap: nowrap;
+  }
+}

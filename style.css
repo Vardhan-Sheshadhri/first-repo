@@ -355,3 +355,178 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
+
+ /*! RESPONSIVE DESIGN */
+ /* =====================================================
+   RESPONSIVE LAYER — APPENDED ONLY (NO EXISTING CODE TOUCHED)
+   Target: Mobile, Tablet, Laptop, Desktop
+===================================================== */
+
+/* ---------- MOBILE (up to 480px) ---------- */
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  #nav_one {
+    flex-basis: auto;
+  }
+
+  #nav_two {
+    flex-basis: auto;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  #nav_two > a {
+    font-size: 16px;
+  }
+
+  /* SLIDER */
+  #slider_container {
+    height: auto;
+    padding: 0 10px;
+  }
+
+  #leftarrow,
+  #rightarrow {
+    display: none;
+  }
+
+  /* SECOND PAGE (CARDS) */
+  #second_page {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .card > img,
+  .layer {
+    width: 100%;
+    height: auto;
+  }
+
+  .layer {
+    gap: 40px;
+  }
+
+  /* THIRD PAGE */
+  #third_page {
+    height: auto;
+  }
+
+  #third_page > img,
+  #third_page_layer {
+    width: 100%;
+  }
+
+  #third_page_layer:hover > h1 {
+    font-size: 40px;
+  }
+
+  #third_page_layer:hover > p {
+    font-size: 16px;
+  }
+
+  /* FOURTH PAGE (FOOTER INFO) */
+  #fourth_page {
+    height: auto;
+  }
+
+  #info_container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  #info1, #info2, #info3, #info4 {
+    flex-basis: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+  }
+
+  #info4_subscribe > input,
+  #info4_subscribe > button {
+    width: 100%;
+  }
+}
+
+
+/* ---------- TABLET (481px to 768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  /* NAVBAR */
+  #nav_two {
+    gap: 30px;
+  }
+
+  #nav_two > a {
+    font-size: 18px;
+  }
+
+  /* SLIDER */
+  #slider_container {
+    padding: 0 30px;
+  }
+
+  #leftarrow {
+    left: 40px;
+  }
+
+  #rightarrow {
+    right: 40px;
+  }
+
+  /* SECOND PAGE */
+  #second_page {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  /* THIRD PAGE */
+  #third_page > img,
+  #third_page_layer {
+    width: 90%;
+  }
+
+  #third_page_layer:hover > h1 {
+    font-size: 70px;
+  }
+
+  /* FOURTH PAGE */
+  #info_container {
+    flex-wrap: wrap;
+  }
+
+  #info1, #info2, #info3, #info4 {
+    flex-basis: 45%;
+    border-right: none;
+  }
+}
+
+
+/* ---------- LAPTOP & DESKTOP (769px and above) ---------- */
+@media (min-width: 769px) {
+
+  /* Keep original desktop behavior intact */
+  #second_page {
+    flex-wrap: nowrap;
+  }
+
+  #info_container {
+    flex-wrap: nowrap;
+  }
+}
+
